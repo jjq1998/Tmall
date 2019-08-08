@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.GoodsMapper">
+
+    <insert id="insertNewGoods" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO goods (shop_id, goods_name, goods_details, goods_description, goods_image, goods_sales_count, goods_state, goods_price) VALUES (#{shop.id}, #{name}, #{details}, #{description}, #{image}, 0, '下架', #{price})
+    </insert>
+
+    <insert id="insertGoodsTypeByGoodsId">
+        INSERT INTO goods_type_goods (goods_type_id, goods_id) VALUES
+        <foreach collection="goodsTypes" item="item" index="index" separator=",">
+            (
+            #{item},
+            #{param1}
+            )
+        </foreach>
+    </insert>
+
+    <insert id="insertGoodsChoose">
+        INSERT INTO goods_choose (goods_id, goods_choose_one, goods_choose_two, goods_choose_three) VALUES (#{goodsId}, #{chooseOne}, #{chooseTwo}, #{chooseThree})
+    </insert>
+
+    <insert id="insertGoodsParam">
+        INSERT INTO goods_param (goods_choose_id, goods_param_one, goods_param_two, goods_param_three, goods_param_price, goods_param_inventory) VALUES (#{param2}, #{goodsParam.paramOne}, #{goodsParam.paramTwo}, #{goodsParam.paramThree}, #{goodsParam.price}, #{goodsParam.inventory})
+    </insert>
+
+    <insert id="insertGoodsSlide">
+        INSERT INTO goods_slide (goods_id, goods_slide_url) VALUES (#{goodsId}, #{imageUrl})
+    </insert>
+
+    <update id="updateGoodsState">
+        UPDATE goods SET goods_state = #{param2} WHERE goods_id = #{param1}
+    </update>
+
+    <update id="updateGoodsSaleCount">
+        UPDATE goods SET goods_sales_count = goods_sales_count + 1 WHERE goods_id = #{goodsId}
+    </update>
+
+    <update id="updateGoodsByGoodsId">
+        UPDATE goods
+        <set>
+          <if test="name != null">
+              goods_name = #{name},
+          </if>
+          <if test="details != null">
+              goods_details = #{details},
+          </if>
+          <if test="description != null">
+              goods_description = #{description},
+          </if>
+          <if test="image != null">
+              goods_image = #{image},
+          </if>
+          <if test="price != null">
+              goods_price = #{price}
+          </if>
+        </set>
+        WHERE goods_id = #{id}
+    </update>
+
+    <update id="updateGoodsChoose">
+        UPDATE goods_choose SET goods_choose_one = #{chooseOne}, goods_choose_two = #{chooseTwo}, goods_choose_three = #{chooseThree} WHERE goods_id = #{goodsId}
+    </update>
+
+    <delete id="deleteGoodsByGoodsId">
+        DELETE FROM goods WHERE goods_id = #{goodsId}
+    </delete>
+
+    <delete id="deleteGoodsTypeByGoodsId">
+        DELETE FROM goods_type_goods WHERE goods_id = #{goodsId}
+    </delete>
+
+    <delete id="deleteGoodsChooseByGoodsId">
+        DELETE FROM goods_choose WHERE goods_id = #{goodsId}
+    </delete>
+
+    <delete id="deleteGoodsParamByParamId">
+        DELETE FROM goods_param WHERE goods_param_id = #{paramId}
+    </delete>
+
+    <delete id="deleteGoodsSlideByGoodsId">
+        DELETE FROM goods_slide WHERE goods_id = #{goodsId}
+    </delete>
+
+    <select id="selectAllGoodsByType" resultMap="goodsResult">
+        SELECT g.goods_id,
+               g.shop_id,
+               g.goods_name,
+               g.goods_details,
+               g.goods_description,
+               g.goods_image,
+               g.goods_sales_count,
+               g.goods_state,
+               g.goods_price,
+               gc.goods_choose_id,
+               gc.goods_id,
+               gc.goods_choose_one,
+               gc.goods_choose_two,
+               gc.goods_choose_three,
+               gp.goods_param_id,
+               gp.goods_choose_id,
+               gp.goods_param_one,
+               gp.goods_param_two,
+               gp.goods_param_three,
+               gp.goods_param_price,
+               gp.goods_param_inventory,
+               gtg.goods_type_id,
+               gtg.goods_id,
+               gt.goods_type_id,
+               gt.category_id,
+               gt.goods_type_name,
+               s.shop_id,
+               s.shop_name
+        FROM goods AS g
+        LEFT OUTER JOIN goods_choose AS gc ON g.goods_id = gc.goods_id
+        LEFT OUTER JOIN goods_param AS gp ON gp.goods_choose_id = gc.goods_choose_id
+        LEFT OUTER JOIN goods_type_goods AS gtg ON g.goods_id = gtg.goods_id
+        LEFT OUTER JOIN goods_type AS gt ON gt.goods_type_id = gtg.goods_type_id
+        LEFT OUTER JOIN shop AS s ON g.shop_id = s.shop_id
+        LEFT OUTER JOIN category AS c ON c.category_id = gt.category_id
+        LEFT OUTER JOIN type AS t ON c.type_id = t.type_id
+        WHERE t.type_name = #{type}
+    </select>
+
+    <select id="selectAllGoodsByGoodsType" resultMap="goodsResult">
+        SELECT g.goods_id,
+               g.shop_id,
+               g.goods_name,
+               g.goods_details,
+               g.goods_description,
+               g.goods_image,
+               g.goods_sales_count,
+               g.goods_state,
+               g.goods_price,
+               gc.goods_choose_id,
+               gc.goods_id,
+               gc.goods_choose_one,
+               gc.goods_choose_two,
+               gc.goods_choose_three,
+               gp.goods_param_id,
+               gp.goods_choose_id,
+               gp.goods_param_one,
+               gp.goods_param_two,
+               gp.goods_param_three,
+               gp.goods_param_price,
+               gp.goods_param_inventory,
+               gtg.goods_type_id,
+               gtg.goods_id,
+               gt.goods_type_id,
+               gt.category_id,
+               gt.goods_type_name,
+               s.shop_id,
+               s.shop_name
+        FROM goods AS g
+        LEFT OUTER JOIN goods_choose AS gc ON g.goods_id = gc.goods_id
+        LEFT OUTER JOIN goods_param AS gp ON gp.goods_choose_id = gc.goods_choose_id
+        LEFT OUTER JOIN goods_type_goods AS gtg ON g.goods_id = gtg.goods_id
+        LEFT OUTER JOIN goods_type AS gt ON gt.goods_type_id = gtg.goods_type_id
+        LEFT OUTER JOIN shop AS s ON g.shop_id = s.shop_id
+        WHERE gtg.goods_type_name = #{goodsType}
+    </select>
+
+    <select id="selectAllGoodsByCondition" resultMap="goodsResult">
+        SELECT g.goods_id,
+               g.shop_id,
+               g.goods_name,
+               g.goods_details,
+               g.goods_description,
+               g.goods_image,
+               g.goods_sales_count,
+               g.goods_state,
+               g.goods_price,
+               gc.goods_choose_id,
+               gc.goods_id,
+               gc.goods_choose_one,
+               gc.goods_choose_two,
+               gc.goods_choose_three,
+               gp.goods_param_id,
+               gp.goods_choose_id,
+               gp.goods_param_one,
+               gp.goods_param_two,
+               gp.goods_param_three,
+               gp.goods_param_price,
+               gp.goods_param_inventory,
+               gtg.goods_type_id,
+               gtg.goods_id,
+               gt.goods_type_id,
+               gt.category_id,
+               gt.goods_type_name,
+               s.shop_id,
+               s.shop_name
+        FROM goods AS g
+        LEFT OUTER JOIN goods_choose AS gc ON g.goods_id = gc.goods_id
+        LEFT OUTER JOIN goods_param AS gp ON gp.goods_choose_id = gc.goods_choose_id
+        LEFT OUTER JOIN goods_type_goods AS gtg ON g.goods_id = gtg.goods_id
+        LEFT OUTER JOIN goods_type AS gt ON gt.goods_type_id = gtg.goods_type_id
+        LEFT OUTER JOIN shop AS s ON g.shop_id = s.shop_id
+        LEFT OUTER JOIN category AS c ON c.category_id = gt.category_id
+        LEFT OUTER JOIN type AS t ON c.type_id = t.type_id
+        WHERE t.type_name = #{condition}
+        OR c.category_name = #{condition}
+        OR gt.goods_type_name = #{condition}
+        OR g.goods_name = #{condition}
+        GROUP BY g.goods_id
+    </select>
+
+    <select id="selectAllGoodsByShopId" resultMap="goodsResult">
+        SELECT g.goods_id,
+               g.shop_id,
+               g.goods_name,
+               g.goods_details,
+               g.goods_description,
+               g.goods_image,
+               g.goods_sales_count,
+               g.goods_state,
+               g.goods_price,
+               gc.goods_choose_id,
+               gc.goods_id,
+               gc.goods_choose_one,
+               gc.goods_choose_two,
+               gc.goods_choose_three,
+               gp.goods_param_id,
+               gp.goods_choose_id,
+               gp.goods_param_one,
+               gp.goods_param_two,
+               gp.goods_param_three,
+               gp.goods_param_price,
+               gp.goods_param_inventory,
+               gtg.goods_type_id,
+               gtg.goods_id,
+               gt.goods_type_id,
+               gt.category_id,
+               gt.goods_type_name,
+               s.shop_id,
+               s.shop_name
+        FROM goods AS g
+        LEFT OUTER JOIN goods_choose AS gc ON g.goods_id = gc.goods_id
+        LEFT OUTER JOIN goods_param AS gp ON gp.goods_choose_id = gc.goods_choose_id
+        LEFT OUTER JOIN goods_type_goods AS gtg ON g.goods_id = gtg.goods_id
+        LEFT OUTER JOIN goods_type AS gt ON gt.goods_type_id = gtg.goods_type_id
+        LEFT OUTER JOIN shop AS s ON g.shop_id = s.shop_id
+        WHERE s.shop_id = #{shopId}
+    </select>
+
+    <select id="selectGoodsByGoodsId" resultMap="goodsResult">
+        SELECT g.goods_id,
+               g.shop_id,
+               g.goods_name,
+               g.goods_details,
+               g.goods_description,
+               g.goods_image,
+               g.goods_sales_count,
+               g.goods_state,
+               g.goods_price,
+               gc.goods_choose_id,
+               gc.goods_id,
+               gc.goods_choose_one,
+               gc.goods_choose_two,
+               gc.goods_choose_three,
+               gp.goods_param_id,
+               gp.goods_choose_id,
+               gp.goods_param_one,
+               gp.goods_param_two,
+               gp.goods_param_three,
+               gp.goods_param_price,
+               gp.goods_param_inventory,
+               gtg.goods_type_id,
+               gtg.goods_id,
+               gt.goods_type_id,
+               gt.category_id,
+               gt.goods_type_name,
+               s.shop_id,
+               s.shop_name
+        FROM goods AS g
+        LEFT OUTER JOIN goods_choose AS gc ON g.goods_id = gc.goods_id
+        LEFT OUTER JOIN goods_param AS gp ON gp.goods_choose_id = gc.goods_choose_id
+        LEFT OUTER JOIN goods_type_goods AS gtg ON g.goods_id = gtg.goods_id
+        LEFT OUTER JOIN goods_type AS gt ON gt.goods_type_id = gtg.goods_type_id
+        LEFT OUTER JOIN shop AS s ON g.shop_id = s.shop_id
+        WHERE g.goods_id = #{goodsId}
+    </select>
+
+    <select id="selectGoodsParamByGoodsId" resultMap="goodsParamResult">
+        SELECT goods_param_id, goods_param_one, goods_param_two, goods_param_three, goods_param_price, goods_param_inventory
+        FROM goods_param, goods_choose, goods
+        WHERE goods_param.goods_choose_id = goods_choose.goods_choose_id
+        AND goods_choose.goods_id = goods.goods_id
+        AND goods.goods_id = #{goodsId}
+    </select>
+
+    <select id="selectGoodsChooseByGoodsId" resultMap="goodsChooseResult">
+        SELECT goods_choose_id, goods_id, goods_choose_one, goods_choose_two, goods_choose_three FROM goods_choose WHERE goods_id = #{goodsId}
+    </select>
+
+    <select id="selectGoodsSlideByGoodsId" resultMap="goodsSlideResult">
+        SELECT goods_slide_id, goods_id, goods_slide_url FROM goods_slide WHERE goods_id = #{goodsId}
+    </select>
+
+    <resultMap id="goodsSlideResult" type="GoodsSlide">
+        <id property="id" column="goods_slide_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="imageUrl" column="goods_slide_url"/>
+    </resultMap>
+
+    <resultMap id="goodsParamResult" type="GoodsParam">
+        <id property="id" column="goods_param_id"/>
+        <result property="paramOne" column="goods_param_one"/>
+        <result property="paramTwo" column="goods_param_two"/>
+        <result property="paramThree" column="goods_param_three"/>
+        <result property="price" column="goods_param_price"/>
+        <result property="inventory" column="goods_param_inventory"/>
+    </resultMap>
+
+    <resultMap id="goodsChooseResult" type="GoodsChoose">
+        <id property="id" column="goods_choose_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="chooseOne" column="goods_choose_one"/>
+        <result property="chooseTwo" column="goods_choose_two"/>
+        <result property="chooseThree" column="goods_choose_three"/>
+    </resultMap>
+
+    <resultMap id="goodsResult" type="Goods">
+        <id property="id" column="goods_id"/>
+        <result property="name" column="goods_name"/>
+        <result property="details" column="goods_details"/>
+        <result property="description" column="goods_description"/>
+        <result property="image" column="goods_image"/>
+        <result property="salesCount" column="goods_sales_count"/>
+        <result property="state" column="goods_state"/>
+        <result property="price" column="goods_price"/>
+        <association property="shop" column="shop_id" javaType="Shop">
+            <id property="id" column="shop_id"/>
+            <result property="name" column="shop_name"/>
+        </association>
+        <association property="goodsChoose" column="goods_id" javaType="GoodsChoose">
+            <id property="id" column="goods_choose_id"/>
+            <result property="goodsId" column="goods_id"/>
+            <result property="chooseOne" column="goods_choose_one"/>
+            <result property="chooseTwo" column="goods_choose_two"/>
+            <result property="chooseThree" column="goods_choose_three"/>
+        </association>
+        <collection property="goodsParams" column="goods_choose_id" ofType="GoodsParam">
+            <id property="id" column="goods_param_id"/>
+            <result property="paramOne" column="goods_param_one"/>
+            <result property="paramTwo" column="goods_param_two"/>
+            <result property="paramThree" column="goods_param_three"/>
+            <result property="price" column="goods_param_price"/>
+            <result property="inventory" column="goods_param_inventory"/>
+        </collection>
+        <collection property="goodsTypes" column="goods_type_id" ofType="GoodsType">
+            <id property="id" column="goods_type_id"/>
+            <result property="name" column="goods_type_name"/>
+        </collection>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(245,245,245);
+}
+
+.fa-bars {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#out {
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+#logo1 {
+    background-color: rgb(238, 238, 238);
+    height: 70px;
+    width: 300px;
+    text-align: center;
+}
+
+#logo2 {
+    background-color: rgb(238, 238, 238);
+    height: 70px;
+    width: 100px;
+    text-align: center;
+}
+
+#img1 {
+    padding-top: 15px;
+}
+
+#img2 {
+    width: 100px;
+    height: 70px;
+}
+
+.choose {
+    background-color: rgb(39, 44, 53);
+}
+
+#left1 > ul {
+    list-style: none;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(167, 177, 194);
+}
+
+#left2 > ul {
+    list-style: none;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(167, 177, 194);
+}
+
+.leftDiv {
+    padding-left: 30px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.leftDiv:hover {
+    background-color: rgb(39, 44, 53);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(167, 177, 194);
+}
+
+a:hover {
+
+}
+
+a:visited {
+    color: rgb(167, 177, 194);
+}
+
+#top {
+    height: 70px;
+    color: rgb(145, 145, 145);
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(236, 236, 236)
+}
+
+.input-group {
+    width: 300px;
+    margin: auto;
+}
+
+#register_submit {
+    width: 300px;
+    margin: auto;
+}
+
+#update_submit {
+    width: 300px;
+    margin: auto;
+}
+
+#basic {
+    text-align: center;
+}
+
+.allForm {
+    margin: auto;
+}
+
+#registerPage {
+    margin-top: 30px;
+}
+
+#updatePassword {
+    margin-top: 30px;
+}
+
+#permission {
+    width: 250px;
+}
+
+#prompt {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#prompt1 {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#adminTable {
+    margin: 60px auto auto;
+    width: 700px;
+}
+
+#adminPage {
+    margin: 20px auto auto;
+}
+
+#adminLogTable {
+    width: 1000px;
+    margin: 5% auto auto;
+}
+
+#adminLogPage {
+    margin: 10px auto auto;
+}
+
+.deleteButton {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.deleteAdmin {
+    color: white;
+}

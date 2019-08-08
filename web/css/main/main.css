@@ -1,0 +1,104 @@
+#head_right_img {
+    margin-top: 20px;
+    float: right;
+}
+
+#search {
+    width: 500px;
+    margin-left: 50px;
+}
+
+#search_btn {
+    width: 100px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 0;
+}
+
+#search_prompt {
+    width: 400px;
+}
+
+#categoryDiv {
+    background-color: #FF0036;
+    color: white;
+    font-size: 20px;
+}
+
+#tmllShop {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#tmllInternational {
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#tmllLink a {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+#tmllLink {
+    padding-top: 3px;
+}
+
+#slideDiv {
+    background-color: #e8e8e8;
+}
+
+#type_bar {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#type_bar_inner {
+    height: 500px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 0;
+}
+
+#type_bar_inner_middle {
+    background-color: white;
+    display: none
+}
+
+#type_bar_inner_right {
+    min-height: 500px;
+    background-color: white;
+    display: none;
+}
+
+#type_bar_inner_brand {
+    min-height: 500px;
+    background-color: white;
+    display: none;
+}
+
+.categoryDivRight {
+    border-bottom: dashed 1px darkgray;
+}
+
+li > a {
+    color: white;
+    font-size: 14px;
+}
+
+.typeLi > i {
+    color: white;
+}
+
+.typeLi {
+    height: 31px;
+    color: white;
+    padding-left: 15px;
+}

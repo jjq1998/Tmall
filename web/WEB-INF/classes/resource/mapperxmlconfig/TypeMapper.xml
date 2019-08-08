@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.TypeMapper">
+
+    <insert id="insertType">
+      INSERT INTO type (type_name) VALUES (#{typeName})
+    </insert>
+
+    <insert id="insertCategory">
+      INSERT INTO category (type_id, category_name) VALUES (#{param2}, #{param1})
+    </insert>
+
+    <insert id="insertGoodsType">
+      INSERT INTO goods_type (category_id, goods_type_name) VALUES (#{param2}, #{param1})
+    </insert>
+
+    <update id="updateCategoryToDefault">
+      UPDATE category SET type_id = 1 WHERE type_id = #{typeId}
+    </update>
+
+    <update id="updateGoodsTypeToDefault">
+      UPDATE goods_type SET category_id = 1 WHERE category_id = #{categoryId}
+    </update>
+
+    <delete id="deleteType">
+      DELETE FROM type WHERE type_id = #{id}
+    </delete>
+
+    <delete id="deleteCategory">
+      DELETE FROM category WHERE category_id = #{id}
+    </delete>
+
+    <delete id="deleteGoodsType">
+      DELETE FROM goods_type WHERE goods_type_id = #{id}
+    </delete>
+
+    <select id="selectAllTypeInPage" resultMap="typeResult">
+      SELECT type_id, type_name, type_basic FROM type ORDER BY type_id LIMIT #{page}, 6
+    </select>
+
+    <select id="selectAllCategoryInPage" resultMap="categoryResult">
+      SELECT category_id, category_name, type_name FROM category, type WHERE category.type_id = type.type_id ORDER BY category_id LIMIT #{page}, 6
+    </select>
+
+    <select id="selectCategoryByTypeId" resultMap="categoryResult">
+      SELECT category_id, category_name, type_name FROM category, type WHERE category.type_id = type.type_id AND category.type_id = #{typeId} ORDER BY category_id
+    </select>
+
+    <select id="selectAllGoodsTypeInPage" resultMap="goodsTypeResult">
+      SELECT goods_type_id, goods_type_name, category_name FROM goods_type, category WHERE goods_type.category_id = category.category_id ORDER BY goods_type_id LIMIT #{page}, 6
+    </select>
+
+    <select id="selectAllGoodsTypeByCategoryId" resultMap="goodsTypeResult">
+      SELECT goods_type_id, goods_type_name, category_name FROM goods_type, category WHERE goods_type.category_id = category.category_id AND goods_type.category_id = #{categoryId} ORDER BY goods_type_id
+    </select>
+
+    <select id="selectAllTypeCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM type
+    </select>
+
+    <select id="selectAllCategoryCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM category
+    </select>
+
+    <select id="selectAllGoodsTypeCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM goods_type
+    </select>
+
+    <select id="selectAllType" resultMap="typeResult">
+      SELECT type_id, type_name, type_basic FROM type ORDER BY type_id
+    </select>
+
+    <select id="selectAllCategory" resultMap="categoryResult">
+      SELECT category_id, category_name FROM category ORDER BY category_id
+    </select>
+
+    <select id="selectAllGoodsType" resultMap="goodsTypeResult">
+      SELECT goods_type_id, goods_type_name FROM goods_type ORDER BY goods_type_id
+    </select>
+
+    <select id="selectGoodsTypeByGoodsId" resultMap="goodsTypeResult">
+      SELECT g.goods_type_id, g.goods_type_name FROM goods_type AS g, goods_type_goods AS gtg WHERE g.goods_type_id = gtg.goods_type_id AND gtg.goods_id = #{goodsId}
+    </select>
+
+    <resultMap id="typeResult" type="Type">
+        <id property="id" column="type_id"/>
+        <result property="name" column="type_name"/>
+        <result property="basic" column="type_basic"/>
+    </resultMap>
+
+    <resultMap id="categoryResult" type="Category">
+        <id property="id" column="category_id"/>
+        <result property="name" column="category_name"/>
+        <result property="typeName" column="type_name"/>
+    </resultMap>
+
+    <resultMap id="goodsTypeResult" type="GoodsType">
+        <id property="id" column="goods_type_id"/>
+        <result property="name" column="goods_type_name"/>
+        <result property="categoryName" column="category_name"/>
+    </resultMap>
+</mapper>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.AskMapper">
+
+    <insert id="insertAsk">
+      INSERT INTO ask (shop_id, user_id, ask_type, ask_content, ask_state) VALUES (#{shop.id}, #{user.id}, #{type}, #{content}, '待审批')
+    </insert>
+
+    <insert id="insertBrandAsk">
+      INSERT INTO ask (shop_id, user_id, ask_type, ask_content, ask_state, brand_name, brand_type, brand_image) VALUES (#{shop.id}, #{user.id}, #{type}, #{content}, '待审批', #{brandName}, #{brandType}, #{brandImage})
+    </insert>
+
+    <update id="updateAskState">
+      UPDATE ask SET ask_state = #{param2} WHERE ask_id = #{param1}
+    </update>
+
+    <update id="updateAskAdmin">
+      UPDATE ask SET ask_admin = #{param1} WHERE ask_id = #{param2}
+    </update>
+
+    <delete id="deleteOpenShopAskByUserId">
+      DELETE FROM ask WHERE user_id = #{userId} AND ask_type = '开店' AND ask_state = '待审批'
+    </delete>
+
+    <delete id="deleteBrandAskByUserId">
+      DELETE FROM ask WHERE user_id = #{userId} AND ask_type = '认证' AND ask_state = '待审批'
+    </delete>
+
+    <select id="selectAllAskByUserId" resultMap="askResult">
+      SELECT a.ask_id,
+             a.shop_id,
+             a.user_id,
+             a.ask_type,
+             a.ask_content,
+             a.ask_state,
+             a.ask_admin,
+             a.brand_name,
+             a.brand_type,
+             a.brand_image,
+             s.shop_id,
+             s.shop_name,
+             s.shop_image,
+             u.user_id,
+             u.user_name,
+             u.user_level
+      FROM ask AS a
+      LEFT OUTER JOIN shop AS s ON a.shop_id = s.shop_id
+      LEFT OUTER JOIN user AS u ON a.user_id = u.user_id
+      WHERE a.user_id = #{param1}
+      LIMIT #{param2}, 10
+    </select>
+
+    <select id="selectAllAskByType" resultMap="askResult">
+      SELECT a.ask_id,
+             a.shop_id,
+             a.user_id,
+             a.ask_type,
+             a.ask_content,
+             a.ask_state,
+             a.ask_admin,
+             a.brand_name,
+             a.brand_type,
+             a.brand_image,
+             s.shop_id,
+             s.shop_name,
+             s.shop_image,
+             u.user_id,
+             u.user_name,
+             u.user_level
+      FROM ask AS a
+      LEFT OUTER JOIN shop AS s ON a.shop_id = s.shop_id
+      LEFT OUTER JOIN user AS u ON a.user_id = u.user_id
+      WHERE a.ask_type = #{param1} AND a.ask_state = '待审批'
+      LIMIT #{param2}, 10
+    </select>
+
+    <select id="selectOpenShopAskIsExistByUserId" resultType="java.lang.Boolean">
+      SELECT COUNT(*) FROM ask WHERE user_id = #{userId} AND ask_type = '开店' AND ask_state = '待审批'
+    </select>
+
+    <select id="selectAskCountByUserId" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM ask WHERE user_id = #{userId}
+    </select>
+
+    <select id="selectAskCountByType" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM ask WHERE ask_type = #{type} AND ask_state = '待审批'
+    </select>
+
+    <select id="selectBrandAskIsExistByUserId" resultType="java.lang.Boolean">
+      SELECT COUNT(*) FROM ask WHERE user_id = #{userId} AND ask_type = '认证' AND ask_state = '待审批'
+    </select>
+
+    <select id="selectAskByAskId" resultMap="askResult">
+     SELECT  a.ask_id,
+             a.shop_id,
+             a.user_id,
+             a.ask_type,
+             a.ask_content,
+             a.ask_state,
+             a.ask_admin,
+             a.brand_name,
+             a.brand_type,
+             a.brand_image,
+             s.shop_id,
+             s.shop_name,
+             s.shop_image,
+             u.user_id,
+             u.user_name,
+             u.user_level
+      FROM ask AS a
+      LEFT OUTER JOIN shop AS s ON a.shop_id = s.shop_id
+      LEFT OUTER JOIN user AS u ON a.user_id = u.user_id
+      WHERE a.ask_id = #{askId}
+    </select>
+    <select id="selectBrandAskByUserId" resultType="com.jjq.bean.Ask">
+     SELECT  a.ask_id,
+             a.shop_id,
+             a.user_id,
+             a.ask_type,
+             a.ask_content,
+             a.ask_state,
+             a.ask_admin,
+             a.brand_name,
+             a.brand_type,
+             a.brand_image,
+             s.shop_id,
+             s.shop_name,
+             s.shop_image,
+             u.user_id,
+             u.user_name,
+             u.user_level
+      FROM ask AS a
+      LEFT OUTER JOIN shop AS s ON a.shop_id = s.shop_id
+      LEFT OUTER JOIN user AS u ON a.user_id = u.user_id
+      WHERE u.user_id = #{userId} AND a.ask_state = '待审批' AND a.ask_type = '认证'
+    </select>
+
+    <resultMap id="askResult" type="Ask">
+        <id property="id" column="ask_id"/>
+        <result property="content" column="ask_content"/>
+        <result property="type" column="ask_type"/>
+        <result property="state" column="ask_state"/>
+        <result property="admin" column="ask_admin"/>
+        <result property="brandName" column="brand_name"/>
+        <result property="brandType" column="brand_type"/>
+        <result property="brandImage" column="brand_image"/>
+        <association property="user" javaType="User" column="user_id">
+            <id property="id" column="user_id"/>
+            <result property="name" column="user_name"/>
+            <result property="level" column="user_level"/>
+        </association>
+        <association property="shop" javaType="Shop" column="shop_id">
+            <id property="id" column="shop_id"/>
+            <result property="name" column="shop_name"/>
+            <result property="image" column="shop_image"/>
+        </association>
+    </resultMap>
+</mapper>

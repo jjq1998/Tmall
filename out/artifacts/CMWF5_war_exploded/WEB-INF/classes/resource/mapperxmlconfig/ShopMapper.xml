@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.ShopMapper">
+    <insert id="insertShop" useGeneratedKeys="true" keyProperty="id">
+      INSERT INTO shop (user_id, shop_name, shop_description_mark, shop_stream_mark, shop_service_mark, shop_time, shop_state, shop_image)
+      VALUES (#{user.id}, #{name}, 5, 5, 5, now(), '待审核', #{image})
+    </insert>
+
+    <update id="updateShopService">
+      UPDATE shop SET shop_service_one = #{param1}, shop_service_two = #{param2}, shop_service_three = #{param3} WHERE shop_id = #{param4}
+    </update>
+
+    <update id="updateShopState">
+      UPDATE shop SET shop_state = #{param1} WHERE shop_id = #{param2}
+    </update>
+
+    <update id="updateShopBrand">
+      UPDATE shop SET brand_id = #{param1} WHERE shop_id = #{param2}
+    </update>
+
+    <delete id="deleteShopByUserId">
+      DELETE FROM shop WHERE user_id = #{userId}
+    </delete>
+
+    <select id="selectAllShop" resultMap="shopResult">
+      SELECT
+      shop_id,
+      shop_name,
+      shop_description_mark,
+      shop_stream_mark,
+      shop_service_mark,
+      shop_time,
+      shop_state,
+      shop_image,
+      shop_service_one,
+      shop_service_two,
+      shop_service_three,
+      brand_id,
+      user.user_id,
+      user_name,
+      user_password,
+      user_type,
+      user_level
+      FROM shop, user
+      WHERE shop.user_id = user.user_id
+      LIMIT #{page}, 10
+    </select>
+
+    <select id="selectShopById" resultMap="shopResult">
+      SELECT
+      shop_id,
+      shop_name,
+      shop_description_mark,
+      shop_stream_mark,
+      shop_service_mark,
+      shop_time,
+      shop_state,
+      shop_image,
+      shop_service_one,
+      shop_service_two,
+      shop_service_three,
+      brand_id,
+      user.user_id,
+      user_name,
+      user_password,
+      user_type,
+      user_level
+      FROM shop, user
+      WHERE shop.user_id = user.user_id AND shop_id = #{id}
+    </select>
+
+    <select id="selectShopByUserId" resultMap="shopResult">
+      SELECT
+      shop_id,
+      shop_name,
+      shop_description_mark,
+      shop_stream_mark,
+      shop_service_mark,
+      shop_time,
+      shop_state,
+      shop_image,
+      shop_service_one,
+      shop_service_two,
+      shop_service_three,
+      brand_id,
+      user.user_id,
+      user_name,
+      user_password,
+      user_type,
+      user_level
+      FROM shop, user
+      WHERE shop.user_id = user.user_id AND shop.user_id = #{userId}
+    </select>
+
+    <select id="selectAllShopCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM shop
+    </select>
+
+    <select id="selectShopState" resultType="java.lang.String">
+      SELECT shop_state FROM shop WHERE shop_id = #{shopId}
+    </select>
+
+    <select id="selectShopIsBrand" resultType="java.lang.Boolean">
+      SELECT COUNT(*) FROM shop WHERE user_id = #{userId} AND brand_id != ''
+    </select>
+
+    <resultMap id="shopResult" type="Shop">
+        <id property="id" column="shop_id"/>
+        <result property="name" column="shop_name"/>
+        <result property="descriptionMark" column="shop_description_mark"/>
+        <result property="streamMark" column="shop_stream_mark"/>
+        <result property="serviceMark" column="shop_service_mark"/>
+        <result property="time" column="shop_time"/>
+        <result property="state" column="shop_state"/>
+        <result property="image" column="shop_image"/>
+        <result property="serviceOne" column="shop_service_one"/>
+        <result property="serviceTwo" column="shop_service_two"/>
+        <result property="serviceThree" column="shop_service_three"/>
+        <result property="brandId" column="brand_id"/>
+        <association property="user" column="user_id" javaType="User">
+            <id property="id" column="user_id"/>
+            <result property="name" column="user_name"/>
+            <result property="password" column="user_password"/>
+            <result property="type" column="user_type"/>
+            <result property="level" column="user_level"/>
+        </association>
+    </resultMap>
+</mapper>

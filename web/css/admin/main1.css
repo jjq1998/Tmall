@@ -1,0 +1,60 @@
+#shopTable {
+    width: 1000px;
+    margin: 3% auto auto;
+}
+
+#brandTable {
+    width: 1000px;
+    margin: 3% auto auto;
+}
+
+#shopAskTable {
+    width: 1000px;
+    margin: 3% auto auto;
+}
+
+.deleteAdmin {
+    color: white;
+}
+
+.deleteAdmin:visited {
+    color: white;
+}
+
+.shopDescription {
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+#nameInput {
+    margin-right: 100px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+
+#imageInput {
+    width: 400px;
+    margin-top: 20px;
+}
+
+#askContent {
+    text-align: left;
+}
+
+#askContent2 {
+    margin-left: 200px;
+}
+
+.ask_btn {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: white;
+    min-height: 600px;
+}

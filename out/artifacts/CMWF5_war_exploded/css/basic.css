@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    font-size: 10px;
+}
+
+.dropdown-menu {
+    font-size: 10px;
+}
+
+#top_bar_right {
+    margin-left: auto;
+}
+
+#top_bar_div {
+    background-color: #dc3545;
+}
+
+#top_bar {
+    padding: 0;
+}
+
+#bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.link_one {
+    margin-top: 20px;
+    color: #6c6c6c;
+}
+
+.link_two {
+    color: white;
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+#qrcode {
+    width: 150px;
+    height: 150px;
+}
+
+#about {
+    min-height: 200px;
+    background-color: black;
+}
+
+.shu {
+    color: white;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+#copy1 {
+    font-size: 10px;
+    color: white;
+    margin-top: 5px;
+}
+
+#copy2 {
+    font-size: 8px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.input-group {
+    width: 300px;
+    margin: auto auto 0px;
+}
+
+.list-group-item {
+    border: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.nav-link {
+    color: white;
+}

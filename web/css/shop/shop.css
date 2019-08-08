@@ -1,0 +1,38 @@
+#left_bar {
+    border: solid 1px lightgrey;
+}
+
+#left_bar a {
+    color: black;
+    padding-top: 0;
+    padding-bottom: 3px;
+}
+
+.disabled {
+    font-size: 15px;
+}
+
+#left_bar i {
+    width: 20px;
+    margin-left: 3px;
+    color: lightskyblue;
+}
+
+#left_bar .nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+#middle {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#middle_title {
+    background-color: #fafafa;
+    border: dashed 1px #e0e0e0;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

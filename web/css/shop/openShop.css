@@ -1,0 +1,41 @@
+#editor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#imageInput {
+    width: 420px;
+}
+
+#nameInput {
+    margin-right: 40px;
+}
+
+#shopForm {
+    margin-top: 20px;
+}
+
+#ask_btn {
+    float: right;
+    margin-bottom: 30px;
+}
+
+#askP {
+    margin-top: 200px;
+}
+
+#askP a {
+    color: #337FE5;
+}
+
+#askP a:hover {
+    color: red;
+}
+
+#askDiv {
+    text-align: center;
+}
+
+#basicDiv {
+    margin-bottom: 100px;
+}

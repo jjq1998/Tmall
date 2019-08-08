@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.BrandMapper">
+
+    <insert id="insertBrand" useGeneratedKeys="true" keyProperty="id">
+      INSERT INTO brand (brand_name, brand_image, brand_type) VALUES (#{name}, #{image}, #{typeName})
+    </insert>
+
+    <select id="selectBrandByTypeName" resultMap="brandResult">
+      SELECT brand_id, brand_name, brand_image, brand_type FROM brand WHERE brand_type = #{typeName}
+    </select>
+
+    <select id="selectBrandIsExist" resultType="java.lang.Boolean">
+      SELECT COUNT(*) FROM brand WHERE brand_name = #{brandName}
+    </select>
+
+    <select id="selectByBrandId" resultMap="brandResult">
+      SELECT brand_id, brand_name, brand_image, brand_type FROM brand WHERE brand_id = #{brandId}
+    </select>
+
+    <select id="selectAllBrand" resultType="com.jjq.bean.Brand">
+      SELECT brand_id, brand_name, brand_image, brand_type FROM brand LIMIT #{page}, 29
+    </select>
+
+    <select id="selectBrandByShopId" resultMap="brandResult">
+      SELECT brand.brand_id, brand_name, brand_image, brand_type FROM brand, shop WHERE brand.brand_id = shop.brand_id AND shop_id = #{shopId}
+    </select>
+
+    <resultMap id="brandResult" type="Brand">
+        <id property="id" column="brand_id"/>
+        <result property="name" column="brand_name"/>
+        <result property="image" column="brand_image"/>
+        <result property="typeName" column="brand_type"/>
+    </resultMap>
+
+</mapper>

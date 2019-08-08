@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.ChatMapper">
+
+    <insert id="insertNewAdminChatByUser">
+      INSERT INTO admin_chat (user_id, admin_id, admin_chat_content, admin_chat_time, admin_chat_state, admin_chat_sender) VALUES (#{param1}, #{param2}, #{param3}, now(), '未读', '用户')
+    </insert>
+
+    <insert id="insertNewAdminChatByAdmin">
+      INSERT INTO admin_chat (user_id, admin_id, admin_chat_content, admin_chat_time, admin_chat_state, admin_chat_sender) VALUES (#{param1}, #{param2}, #{param3}, now(), '未读', '管理员')
+    </insert>
+
+    <update id="updateAdminChatReadByAdmin">
+      UPDATE admin_chat SET admin_chat_state = '已读' WHERE user_id = #{param1} AND admin_id = #{param2} AND admin_chat_sender = '用户'
+    </update>
+
+    <update id="updateAdminChatReadByUser">
+      UPDATE admin_chat SET admin_chat_state = '已读' WHERE user_id = #{param1} AND admin_id = #{param2} AND admin_chat_sender = '管理员'
+    </update>
+
+    <select id="selectAllUnreadChatCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM user_chat, admin_chat WHERE user_id_receive = #{id} AND user_chat_state = '未读' OR user_id = #{id} AND admin_chat_state = '未读' AND admin_chat_sender = '管理员'
+    </select>
+
+    <select id="selectAllAdminChatByUserAndAdminId" resultMap="adminChatResult">
+      SELECT admin_chat_id,
+             admin_chat_content,
+             admin_chat_time,
+             admin_chat_sender,
+             admin_chat.user_id,
+             user.user_id,
+             user_name,
+             user_password,
+             user_type,
+             user_level,
+             admin_chat.admin_id,
+             admin.admin_id,
+             admin_name,
+             admin_password,
+             admin_permission
+      FROM admin_chat, user, admin
+      WHERE admin_chat.user_id = user.user_id
+      AND admin_chat.admin_id = admin.admin_id
+      AND admin_chat.user_id = #{param1}
+      AND admin_chat.admin_id = #{param2}
+      AND admin_chat_id > #{param3}
+    </select>
+
+    <select id="selectAdminChatByUserId" resultMap="adminChatResult">
+      SELECT max(admin_chat_id),
+             admin_chat_content,
+             admin_chat_time,
+             admin_chat_sender,
+             admin_chat.user_id,
+             user.user_id,
+             user_name,
+             user_password,
+             user_type,
+             user_level,
+             admin_chat.admin_id,
+             admin.admin_id,
+             admin_name,
+             admin_password,
+             admin_permission
+      FROM admin_chat, user, admin
+      WHERE admin_chat.user_id = user.user_id
+      AND admin_chat.admin_id = admin.admin_id
+      AND admin_chat.user_id = #{userId}
+      GROUP BY admin_chat.admin_id
+    </select>
+
+    <select id="selectAdminChatByAdminId" resultMap="adminChatResult">
+     SELECT max(admin_chat_id),
+             admin_chat_content,
+             admin_chat_time,
+             admin_chat_sender,
+             admin_chat.user_id,
+             user.user_id,
+             user_name,
+             user_password,
+             user_type,
+             user_level,
+             admin_chat.admin_id,
+             admin.admin_id,
+             admin_name,
+             admin_password,
+             admin_permission
+      FROM admin_chat, user, admin
+      WHERE admin_chat.user_id = user.user_id
+      AND admin_chat.admin_id = admin.admin_id
+      AND admin_chat.user_id = #{adminId}
+      GROUP BY admin_chat.user_id
+    </select>
+
+    <resultMap id="adminChatResult" type="AdminChat">
+        <id property="id" column="admin_chat_id"/>
+        <result property="content" column="admin_chat_content"/>
+        <result property="time" column="admin_chat_time"/>
+        <result property="state" column="admin_chat_state"/>
+        <result property="sender" column="admin_chat_sender"/>
+        <association property="user" column="user_id" javaType="User">
+            <id property="id" column="user_id"/>
+            <result property="name" column="user_name"/>
+            <result property="password" column="user_password"/>
+            <result property="type" column="user_type"/>
+            <result property="level" column="user_level"/>
+        </association>
+        <association property="admin" column="admin_id" javaType="Admin">
+            <id property="id" column="admin_id"/>
+            <result property="name" column="admin_name"/>
+            <result property="password" column="admin_password"/>
+            <result property="permission" column="admin_permission"/>
+        </association>
+    </resultMap>
+
+</mapper>

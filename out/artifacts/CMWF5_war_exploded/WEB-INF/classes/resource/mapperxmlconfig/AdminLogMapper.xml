@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.AdminLogMapper">
+
+    <insert id="insertAdminLog">
+      INSERT INTO admin_log (admin_id, admin_log_action, admin_log_time) VALUES (#{admin.id}, #{action}, now())
+    </insert>
+
+    <select id="selectAllAdminLog" resultMap="adminLogResult">
+      SELECT l.admin_log_id,
+             l.admin_id,
+             l.admin_log_action,
+             l.admin_log_time,
+             a.admin_id,
+             a.admin_name,
+             a.admin_password,
+             a.admin_permission
+             FROM admin AS a, admin_log AS l
+             WHERE l.admin_id = a.admin_id
+             ORDER BY l.admin_log_id DESC
+             LIMIT #{page}, 10
+    </select>
+
+    <select id="selectAllAdminLogCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM admin_log
+    </select>
+
+    <resultMap id="adminLogResult" type="AdminLog">
+        <id property="id" column="admin_log_id"/>
+        <result property="action" column="admin_log_action"/>
+        <result property="time" column="admin_log_time"/>
+        <association property="admin" javaType="Admin" column="admin_id">
+            <id property="id" column="admin_id"/>
+            <result property="name" column="admin_name"/>
+            <result property="password" column="admin_password"/>
+            <result property="permission" column="admin_permission"/>
+        </association>
+    </resultMap>
+
+</mapper>

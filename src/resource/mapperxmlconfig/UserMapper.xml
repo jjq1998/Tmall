@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjq.mapper.UserMapper">
+
+    <insert id="insertUser">
+      INSERT INTO user (user_name, user_password, user_type, user_level) VALUES (#{name}, #{password}, '买家', 1)
+    </insert>
+
+    <update id="updatePassword">
+      UPDATE user SET user_password = #{password} WHERE user_id = #{id}
+    </update>
+
+    <update id="updateUserType">
+      UPDATE user SET user_type = '卖家' WHERE user_id = #{userId}
+    </update>
+
+    <select id="selectUserByNameAndPassword" resultMap="userResult">
+      SELECT user_id, user_name, user_password, user_type, user_level FROM user WHERE user_name = #{name} AND user_password = #{password}
+    </select>
+
+    <select id="selectUserByName" resultType="java.lang.Boolean">
+      SELECT COUNT(*) FROM user WHERE user_name = #{name}
+    </select>
+
+    <resultMap id="userResult" type="User">
+        <id property="id" column="user_id"/>
+        <result property="name" column="user_name"/>
+        <result property="password" column="user_password"/>
+        <result property="type" column="user_type"/>
+        <result property="level" column="user_level"/>
+    </resultMap>
+
+</mapper>

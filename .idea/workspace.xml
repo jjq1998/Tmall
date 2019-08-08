@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CMWF5:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3a06ef6-d34f-4bff-a7d3-d86eefc2fd76" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/main/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2970">
+              <caret line="135" selection-start-line="5" selection-start-column="4" selection-end-line="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/TypeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4268">
+              <caret line="225" column="14" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/main/goodsList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3366">
+              <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/shopPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4070">
+              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resource/mapperxmlconfig/GoodsMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/kindeditor/jsp/upload_json.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1364">
+              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/openShop.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="169" selection-start-line="169" selection-end-line="169" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="134" column="6" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/GoodsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resource/springmvcconfig/springmvc-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CoffeeScript File" />
+        <option value="HTML File" />
+        <option value="JUnit4 Test Class" />
+        <option value="mybatis-config" />
+        <option value="CSS File" />
+        <option value="MyBatis" />
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>4  rtr</find>
+      <find>onmousemove</find>
+      <find>choose</find>
+      <find>choo</find>
+      <find>w</find>
+      <find>event.style</find>
+      <find>style</find>
+      <find>height</find>
+      <find>ele</find>
+      <find>imageurl</find>
+      <find>add</find>
+      <find>span</find>
+      <find>new</find>
+      <find>basic</find>
+      <find>true</find>
+      <find>list-group</find>
+      <find>list-group-item</find>
+      <find>z-index</find>
+      <find>page</find>
+      <find>/deleteShop</find>
+      <find>group</find>
+      <find>selectCategory</find>
+      <find>/goods/selectGoodsByGoodsType</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/type/selectGoodsByGoodsType</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/ChatMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/ChatService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/ChatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/main/adminChatUser.jsp" />
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/ShopMapper.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapperxmlconfig/ShopMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/css/shop/openShop.css" />
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/AskMapper.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapperxmlconfig/AskMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/AskService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/AskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/controller/AskController.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/bean/Type.java" />
+        <option value="$PROJECT_DIR$/web/css/basic.css" />
+        <option value="$PROJECT_DIR$/src/com/jjq/bean/GoodsChoose.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/askList.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/askList2.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/brandAsk.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsListSale.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/shop.jsp" />
+        <option value="$PROJECT_DIR$/src/com/jjq/aop/loginAop.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/TypeMapper.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapperxmlconfig/TypeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/BrandMapper.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapperxmlconfig/BrandMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsListStore.jsp" />
+        <option value="$PROJECT_DIR$/src/com/jjq/bean/GoodsSlide.java" />
+        <option value="$PROJECT_DIR$/src/resource/springmvcconfig/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/com/jjq/bean/Goods.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsById.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsUpdate.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsInsert.jsp" />
+        <option value="$PROJECT_DIR$/src/com/jjq/controller/ShopController.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/mapper/GoodsMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/insertGoodsParam.jsp" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/TypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/TypeService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/com/jjq/controller/TypeController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/shopPage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/main/main.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/main/goodsList.jsp" />
+        <option value="$PROJECT_DIR$/src/resource/mapperxmlconfig/GoodsMapper.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shop/openShop.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-23" />
+    <option name="width" value="970" />
+    <option name="height" value="1063" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jjq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jjq" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="kindeditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="kindeditor" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMWF5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMWF5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="/deleteShop&#9;PSI&#9;JAVA://com.jjq.service.ShopService#deleteShopByUserId&#10;E:\\WorkSpace\\IntelliJIDEA\\CMWF5\\web&#9;FILE&#9;file://E:/WorkSpace/IntelliJIDEA/CMWF5/web&#10;popper&#9;FILE&#9;file://C:/Users/Administrator/.IntelliJIdea2018.2/config/javascript/extLibs/http_cdn.staticfile.org_popper.js_1.15.0_umd_popper.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564489983263" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jjq.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web\css" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web\WEB-INF\jsp\admin" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web\image\login" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web\image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\out\artifacts\CMWF5_war_exploded\brandImage\孤儿" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\out\artifacts\CMWF5_war_exploded\shopImage\测试图片的店铺" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\out\artifacts\CMWF5_war_exploded\shopImage\张旭升的店铺" />
+      <recent name="D:\WorkSpace\IntelliJIDEA\CMWF5\web\brandImage" />
+      <recent name="E:\WorkSpace\IntelliJIDEA\CMWF5\web\image\main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jjq.bean" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="CMWF5:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_17_CMWF5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49816" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="CMWF5:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3a06ef6-d34f-4bff-a7d3-d86eefc2fd76" name="Default Changelist" comment="" />
+      <created>1561494135291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561494135291</updated>
+      <workItem from="1561494139406" duration="3523000" />
+      <workItem from="1561551959858" duration="2230000" />
+      <workItem from="1561560904647" duration="7616000" />
+      <workItem from="1561616071098" duration="1166000" />
+      <workItem from="1561617373480" duration="1278000" />
+      <workItem from="1561657197468" duration="7097000" />
+      <workItem from="1561730053858" duration="11628000" />
+      <workItem from="1561809861866" duration="23213000" />
+      <workItem from="1561897641561" duration="5611000" />
+      <workItem from="1562000348393" duration="6922000" />
+      <workItem from="1562089827563" duration="4512000" />
+      <workItem from="1562136220058" duration="3084000" />
+      <workItem from="1562143845101" duration="161000" />
+      <workItem from="1562186898481" duration="9679000" />
+      <workItem from="1562233618427" duration="6635000" />
+      <workItem from="1562248447257" duration="1521000" />
+      <workItem from="1562283614366" duration="12636000" />
+      <workItem from="1562319531604" duration="5073000" />
+      <workItem from="1562332534358" duration="2146000" />
+      <workItem from="1562362538046" duration="26306000" />
+      <workItem from="1562457879110" duration="12932000" />
+      <workItem from="1562548968141" duration="2856000" />
+      <workItem from="1562561511574" duration="20561000" />
+      <workItem from="1562587039944" duration="1009000" />
+      <workItem from="1562628498032" duration="2089000" />
+      <workItem from="1562719372166" duration="3413000" />
+      <workItem from="1562729757993" duration="21738000" />
+      <workItem from="1562798854922" duration="2229000" />
+      <workItem from="1562810756225" duration="14017000" />
+      <workItem from="1562832804015" duration="4176000" />
+      <workItem from="1562843278938" duration="851000" />
+      <workItem from="1562875484312" duration="1459000" />
+      <workItem from="1562900602940" duration="2260000" />
+      <workItem from="1562978781395" duration="13301000" />
+      <workItem from="1563064989794" duration="26393000" />
+      <workItem from="1563153268370" duration="28599000" />
+      <workItem from="1563231144137" duration="3270000" />
+      <workItem from="1563236823911" duration="2621000" />
+      <workItem from="1563240529466" duration="4697000" />
+      <workItem from="1563251408101" duration="16164000" />
+      <workItem from="1563276138025" duration="4156000" />
+      <workItem from="1563323770977" duration="8449000" />
+      <workItem from="1563341885071" duration="19404000" />
+      <workItem from="1563369007259" duration="1583000" />
+      <workItem from="1563409776920" duration="1284000" />
+      <workItem from="1563411770246" duration="1540000" />
+      <workItem from="1563413888286" duration="240000" />
+      <workItem from="1563415350760" duration="1281000" />
+      <workItem from="1563418108681" duration="725000" />
+      <workItem from="1563436196167" duration="2282000" />
+      <workItem from="1563442147509" duration="7842000" />
+      <workItem from="1563455961542" duration="2640000" />
+      <workItem from="1563496924031" duration="974000" />
+      <workItem from="1563515099747" duration="15355000" />
+      <workItem from="1563545251273" duration="14354000" />
+      <workItem from="1563574325738" duration="2273000" />
+      <workItem from="1563580104938" duration="6067000" />
+      <workItem from="1563669150051" duration="925000" />
+      <workItem from="1563689880960" duration="669000" />
+      <workItem from="1563696292592" duration="1745000" />
+      <workItem from="1563701123889" duration="8005000" />
+      <workItem from="1563779440135" duration="4704000" />
+      <workItem from="1563787828957" duration="2908000" />
+      <workItem from="1563791892309" duration="5480000" />
+      <workItem from="1563868842768" duration="9826000" />
+      <workItem from="1563928120780" duration="14444000" />
+      <workItem from="1563960297440" duration="7884000" />
+      <workItem from="1563977054862" duration="1831000" />
+      <workItem from="1564018144454" duration="8512000" />
+      <workItem from="1564050451336" duration="1756000" />
+      <workItem from="1564101250837" duration="3462000" />
+      <workItem from="1564106360895" duration="97000" />
+      <workItem from="1564106651578" duration="1396000" />
+      <workItem from="1564108933234" duration="2403000" />
+      <workItem from="1564130793996" duration="168000" />
+      <workItem from="1564132799108" duration="10300000" />
+      <workItem from="1564204147553" duration="2064000" />
+      <workItem from="1564213851358" duration="8170000" />
+      <workItem from="1564360613632" duration="16624000" />
+      <workItem from="1564392731039" duration="4964000" />
+      <workItem from="1564446936801" duration="15015000" />
+      <workItem from="1564478799374" duration="9350000" />
+      <workItem from="1564622738766" duration="7556000" />
+      <workItem from="1564653290268" duration="6011000" />
+      <workItem from="1564671020188" duration="2432000" />
+      <workItem from="1564709788580" duration="4228000" />
+      <workItem from="1564738601115" duration="5988000" />
+      <workItem from="1564817245408" duration="670000" />
+      <workItem from="1564823551613" duration="1555000" />
+      <workItem from="1564897343131" duration="629000" />
+      <workItem from="1564967566479" duration="599000" />
+      <workItem from="1565004907331" duration="36000" />
+      <workItem from="1565014088313" duration="158000" />
+      <workItem from="1565052111676" duration="151000" />
+      <workItem from="1565055079224" duration="846000" />
+      <workItem from="1565147119432" duration="847000" />
+      <workItem from="1565233290056" duration="1131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AdminLogMapperTest_insertAdminLog - 2019.07.03 at 04h 12m 57s.xml">
+      <configuration name="AdminLogMapperTest.insertAdminLog" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="592660000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1563" height="845" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22724253" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="MyBatis Log" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4978678" weight="0.34733894" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3997773" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32913166" />
+      <window_info anchor="bottom" id="Application Servers" order="9" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="10" weight="0.32962137" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" weight="0.3767507" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32962137" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32871014" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="17" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-context-4.3.5.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/mapper/AdminLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/AdminLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/ChatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapperxmlconfig/BrandMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/mapper/BrandMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/askList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="136" column="67" selection-start-line="136" selection-start-column="67" selection-end-line="136" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-test-4.3.5.RELEASE-sources.jar!/org/springframework/mock/web/MockMultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsListStore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="167" column="119" selection-start-line="167" selection-start-column="119" selection-end-line="167" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2632">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/AdminLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/AskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="110" column="23" lean-forward="true" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsById.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="165" column="38" lean-forward="true" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/bean/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/bean/GoodsSlide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/kindeditor/kindeditor-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="8839" column="4" selection-start-line="8839" selection-start-column="4" selection-end-line="8839" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SpringLocalModels/module=CMWF5">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SpringLocalModels</ID>
+          <OriginalElement>module=CMWF5</OriginalElement>
+          <nodes>
+            <node x="" y="">module=CMWF5</node>
+            <node x="" y="">fileset=CMWF5/MVC application context</node>
+            <node x="" y="">filePath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springconfig/applicationContext-transaction.xml</node>
+            <node x="" y="">filePath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springconfig/applicationContext-dao.xml</node>
+            <node x="" y="">filePath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springconfig/applicationContext-service.xml</node>
+            <node x="" y="">fileset=CMWF5/MVC springmvc servlet context</node>
+            <node x="" y="">filePath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="333.0" y="102.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show filesets as groups</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SPRING/appContextPath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;appContextName=springmvc-servlet">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SPRING</ID>
+          <OriginalElement>appContextPath=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;appContextName=springmvc-servlet</OriginalElement>
+          <nodes>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;tag=aop:aspectj-autoproxy;offset=1367</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=957</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_name=(com.jjq.controller) [Component]</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.ChatController;bean_name=chatController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.TypeController;bean_name=typeController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.AskController;bean_name=askController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.FileController;bean_name=fileController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.GoodsController;bean_name=goodsController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.ShopController;bean_name=shopController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=com.jjq.controller.AdminController;bean_name=adminController</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler;tag=mvc:default-servlet-handler;offset=921</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=org.springframework.web.multipart.commons.CommonsMultipartResolver;bean_name=multipartResolver</node>
+            <node x="" y="">module=CMWF5;context=D:/WorkSpace/IntelliJIDEA/CMWF5/src/resource/springmvcconfig/springmvc-servlet.xml;bean_class=org.springframework.web.servlet.view.InternalResourceViewResolver;tag=bean;offset=1166</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="304.0" y="290.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Local context</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="240" column="26" lean-forward="true" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/goodsInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1166">
+          <caret line="236" column="19" lean-forward="true" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/bean/GoodsChoose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/bean/GoodsParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.staticfile.org_jquery_3.4.1_jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/insertGoodsParam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/mapper/TypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/mapper/GoodsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/TypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding>
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/TypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="70" selection-start-line="70" selection-end-line="75" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/kindeditor/php/JSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="763" column="8" selection-start-line="763" selection-start-column="8" selection-end-line="763" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapperxmlconfig/TypeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/main/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="135" selection-start-line="5" selection-start-column="4" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/TypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4268">
+          <caret line="225" column="14" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/main/goodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/shopPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4070">
+          <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/kindeditor/jsp/upload_json.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/shop/openShop.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapperxmlconfig/GoodsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="134" column="6" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jjq/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/springmvcconfig/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>CMWF5:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>bootstrap</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CMWF5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
